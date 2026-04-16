@@ -18,6 +18,7 @@ set incsearch
 set peakaboo
 
 set which-key
+set timeoutlen=2000
 
 set quickscope
 
@@ -61,6 +62,8 @@ nmap gh <Action>(ShowIntentionActions)
 
 nmap <leader>sf <Action>(GotoFile)
 
+nmap <c-w>d <Action>(OpenEditorInOppositeTabGroup)
+
 nmap [[ <Action>(MethodUp)
 nmap ]] <Action>(MethodDown)
 
@@ -81,3 +84,7 @@ nmap <leader>nn <Action>(MewElement)
 nmap <leader>nf <Action>(NewFile)
 
 nmap <leader>gG <Action>(Vcs.UpdateProject)
+nmap <leader>gb <Action>(Git.Branches)
+nmap <leader>gB <Action>(Annotate)
+
+nmap <leader>gf <Action>(SelectInProjectView)
